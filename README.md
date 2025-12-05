@@ -120,33 +120,23 @@
 
 프로젝트는 다음과 같이 구성되어 있다.
 
-project/  
- ├─ data/                     # 원본 데이터 (네이버 뉴스, 빅카인즈, 경찰청, KOSIS)  
- ├─ preprocessing/            # 텍스트 정제 및 전처리 코드  
- ├─ analysis/                 # TF-IDF, 감성 분석, LDA 등 분석 코드  
- ├─ visualization/            # 시각화 코드 및 그래프 결과  
- ├─ results/                  # 분석 결과 요약 및 이미지  
- ├─ presentation/             # 발표 자료(PPT)  
- ├─ references/               # 참고 문헌 및 자료  
- └─ README.md  
+project/
+ ├─ data/                                # 데이터 저장소
+ │    ├─ raw/                            # 원본 데이터(CSV 등)
+ │    └─ processed/                      # 전처리된 텍스트/보조 데이터
+ │
+ ├─ analysis/                            # 모든 분석 관련 코드
+ │    ├─ 뉴스_프레임_분류_모델_학습.ipynb
+ │    ├─ 뉴스_보도량_vs_범죄량_추이_비교.ipynb
+ │    ├─ 뉴스_보도량_vs_범죄량_추이_비교(이중축).ipynb
+ │    ├─ violence_C_part_조치유형_지역별_패턴.ipynb
+ │    └─ text(victim_data_supplementary).ipynb
+ │
+ ├─ presentation/                        # 발표 자료
+ │    └─ 최종발표.pptx
+ │
+ └─ README.md
 
-# 10. 실행 방법
 
-프로젝트 코드는 아래 순서로 실행할 수 있다.
 
-## 10.1 환경 설정
-pip install -r requirements.txt
-
-## 10.2 전처리 실행
-python preprocessing/preprocess.py
-
-## 10.3 키워드·감성 분석
-python analysis/analyze_keywords.py  
-python analysis/sentiment_analysis.py
-
-## 10.4 LDA 프레임 분석
-python analysis/lda_analysis.py
-
-## 10.5 시각화 생성
-python visualization/plot_all.py
 
