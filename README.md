@@ -62,11 +62,10 @@ KOSIS 국가통계포털: 인구 및 사회지표 데이터
 팀장: 금다은 (https://github.com/kde-devs
 )
 
-팀원: 허다인 (https://github.com/dainheo
-)
+팀원: 허다인 
 
-팀원: 윤하늘 (https://github.com/gksmfoi
-)
+팀원: 윤하늘 
+
 
 # 6. 분석 파트별 담당자
 6.1 개발 분석
