@@ -121,21 +121,25 @@
 프로젝트는 다음과 같이 구성되어 있다.
 
 project/
- ├─ data/                                # 데이터 저장소
- │    ├─ raw/                            # 원본 데이터(CSV 등)
- │    └─ processed/                      # 전처리된 텍스트/보조 데이터
+ ├─ data/                                 # 데이터 저장소
+ │    ├─ raw/                             # 원본 데이터(CSV 등)
+ │    └─ processed/                       # 전처리된 텍스트/보조 데이터
  │
- ├─ analysis/                            # 모든 분석 관련 코드
+ ├─ analysis/                             # 모든 분석 관련 코드(ipynb)
  │    ├─ 뉴스_프레임_분류_모델_학습.ipynb
  │    ├─ 뉴스_보도량_vs_범죄량_추이_비교.ipynb
  │    ├─ 뉴스_보도량_vs_범죄량_추이_비교(이중축).ipynb
  │    ├─ violence_C_part_조치유형_지역별_패턴.ipynb
  │    └─ text(victim_data_supplementary).ipynb
  │
- ├─ presentation/                        # 발표 자료
+ ├─ presentation/                         # 발표 자료
  │    └─ 최종발표.pptx
  │
+ ├─ references/                           # 참고 문헌
+ │    └─ references.md
+ │
  └─ README.md
+
 
 
 
