@@ -120,6 +120,7 @@
 
 프로젝트는 다음과 같이 구성되어 있다.
 
+```
 project/
  ├─ data/                                 # 데이터 저장소
  │    ├─ raw/                             # 원본 데이터(CSV 등)
@@ -132,13 +133,15 @@ project/
  │    ├─ violence_C_part_조치유형_지역별_패턴.ipynb
  │    └─ text(victim_data_supplementary).ipynb
  │
- ├─ presentation/                         # 발표 자료
+ ├─ presentation/                        # 발표 자료
  │    └─ 최종발표.pptx
  │
- ├─ references/                           # 참고 문헌
+ ├─ references/                          # 참고 문헌
  │    └─ references.md
  │
  └─ README.md
+```
+
 
 
 
