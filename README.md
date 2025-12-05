@@ -128,10 +128,6 @@
 
 ```
 project/
- ├─ data/                                # 데이터 저장소
- │    ├─ raw/                            # 원본 데이터(CSV 등)
- │    └─ processed/                      # 전처리된 텍스트/보조 데이터
- │
  ├─ analysis/                            # 모든 분석 관련 코드(ipynb)
  │    ├─ news_frame_classification.ipynb                 # 뉴스 프레임 분류 모델 학습
  │    ├─ news_volume_vs_crime_trend.ipynb               # 뉴스 보도량 vs 범죄량 추이 비교
@@ -144,12 +140,8 @@ project/
  ├─ presentation/                        # 발표 자료
  │    └─ final_presentation.pptx
  │
- ├─ references/                          # 참고 문헌
- │    └─ references.md
- │
  └─ README.md
 ```
-
 
 
 
