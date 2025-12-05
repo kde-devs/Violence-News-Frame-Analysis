@@ -128,7 +128,7 @@
 
 ```
 project/
- ├─ analysis/                            # 모든 분석 관련 코드(ipynb)
+ ├─ analysis/                                           # 모든 분석 관련 코드(ipynb)
  │    ├─ news_frame_classification.ipynb                # 뉴스 프레임 분류 모델 학습
  │    ├─ news_volume_vs_crime_trend.ipynb               # 뉴스 보도량 vs 범죄량 추이 비교
  │    ├─ news_volume_vs_crime_trend_dual_axis.ipynb     # 이중축 시각화 버전
@@ -137,7 +137,7 @@ project/
  │    ├─ KBS_data_preprocessing_visualization.ipynb     # KBS 기사 전처리 및 시각화
  │    └─ keyword_wordcloud.ipynb                        # 언론사별 키워드·워드클라우드 생성
  │
- ├─ presentation/                        # 발표 자료
+ ├─ presentation/                                       # 발표 자료
  │    └─ final_presentation.pptx
  │
  └─ README.md
