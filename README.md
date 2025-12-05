@@ -74,5 +74,79 @@
 |            | 언론사별 주요 키워드 워드클라우드   | 윤하늘     |
 |            | 감성 변화 시계열 라인차트       | 허다인     |
 
+# 7. 분석 방법
 
+본 프로젝트의 분석 과정은 다음 세 단계로 구성된다.
+
+## 7.1 텍스트 전처리
+- 불용어·특수문자 제거  
+- Okt 형태소 분석 기반 토큰화  
+- 조사 및 1자 단어 제거  
+- 언론사별 텍스트 구조(title, content, date) 통일  
+
+## 7.2 키워드·감성 분석
+- TF-IDF 기반 사건 유형별 핵심 단어 추출  
+- 언론사별·연도별 키워드 분포 비교  
+- 감정 사전 기반 감성 점수 산출  
+- 불안·분노·연민 등 감성 변화 흐름 분석  
+
+## 7.3 프레임 분석(LDA)
+- CountVectorizer 기반 LDA 모델링  
+- 토픽(프레임)별 핵심 단어 및 서술 패턴 도출  
+- 언론사·시기별 프레임 분포 비교  
+- 문서별 토픽 확률 기반 시각화(Boxplot 등)
+
+# 8. 기술 스택
+
+본 프로젝트는 다음과 같은 환경과 라이브러리를 기반으로 수행되었다.
+
+## 8.1 개발 환경
+- Python 3.10  
+- Google Colab / Jupyter Notebook  
+
+## 8.2 주요 라이브러리
+- pandas, numpy  
+- scikit-learn  
+- KoNLPy(Okt)  
+- matplotlib, seaborn  
+- wordcloud  
+- LDA 모델링(sklearn 기반)  
+
+## 8.3 데이터 처리 도구
+- BeautifulSoup, requests (크롤링)  
+- BigKinds 데이터 다운로드  
+
+# 9. 폴더 구조
+
+프로젝트는 다음과 같이 구성되어 있다.
+
+project/  
+ ├─ data/                     # 원본 데이터 (네이버 뉴스, 빅카인즈, 경찰청, KOSIS)  
+ ├─ preprocessing/            # 텍스트 정제 및 전처리 코드  
+ ├─ analysis/                 # TF-IDF, 감성 분석, LDA 등 분석 코드  
+ ├─ visualization/            # 시각화 코드 및 그래프 결과  
+ ├─ results/                  # 분석 결과 요약 및 이미지  
+ ├─ presentation/             # 발표 자료(PPT)  
+ ├─ references/               # 참고 문헌 및 자료  
+ └─ README.md  
+
+# 10. 실행 방법
+
+프로젝트 코드는 아래 순서로 실행할 수 있다.
+
+## 10.1 환경 설정
+pip install -r requirements.txt
+
+## 10.2 전처리 실행
+python preprocessing/preprocess.py
+
+## 10.3 키워드·감성 분석
+python analysis/analyze_keywords.py  
+python analysis/sentiment_analysis.py
+
+## 10.4 LDA 프레임 분석
+python analysis/lda_analysis.py
+
+## 10.5 시각화 생성
+python visualization/plot_all.py
 
