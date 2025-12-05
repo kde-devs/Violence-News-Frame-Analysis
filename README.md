@@ -128,19 +128,21 @@
 
 ```
 project/
- ├─ data/                                 # 데이터 저장소
- │    ├─ raw/                             # 원본 데이터(CSV 등)
- │    └─ processed/                       # 전처리된 텍스트/보조 데이터
+ ├─ data/                                # 데이터 저장소
+ │    ├─ raw/                            # 원본 데이터(CSV 등)
+ │    └─ processed/                      # 전처리된 텍스트/보조 데이터
  │
- ├─ analysis/                             # 모든 분석 관련 코드(ipynb)
- │    ├─ 뉴스_프레임_분류_모델_학습.ipynb
- │    ├─ 뉴스_보도량_vs_범죄량_추이_비교.ipynb
- │    ├─ 뉴스_보도량_vs_범죄량_추이_비교(이중축).ipynb
- │    ├─ violence_C_part_조치유형_지역별_패턴.ipynb
- │    └─ text(victim_data_supplementary).ipynb
+ ├─ analysis/                            # 모든 분석 관련 코드(ipynb)
+ │    ├─ news_frame_classification.ipynb                 # 뉴스 프레임 분류 모델 학습
+ │    ├─ news_volume_vs_crime_trend.ipynb               # 뉴스 보도량 vs 범죄량 추이 비교
+ │    ├─ news_volume_vs_crime_trend_dual_axis.ipynb     # 이중축 시각화 버전
+ │    ├─ violence_action_region_pattern.ipynb           # 조치 유형/지역별 패턴 분석
+ │    ├─ victim_data_supplementary.ipynb                # 피해자 데이터 보조 분석
+ │    ├─ KBS_data_preprocessing_visualization.ipynb     # KBS 기사 전처리 및 시각화
+ │    └─ keyword_wordcloud.ipynb                        # 언론사별 키워드·워드클라우드 생성
  │
  ├─ presentation/                        # 발표 자료
- │    └─ 최종발표.pptx
+ │    └─ final_presentation.pptx
  │
  ├─ references/                          # 참고 문헌
  │    └─ references.md
