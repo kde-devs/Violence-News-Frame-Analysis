@@ -126,7 +126,7 @@
 
 프로젝트는 다음과 같이 구성되어 있다.
 
-```
+'''
 project/
  ├─ analysis/                                           # 모든 분석 관련 코드(ipynb)
  │    ├─ news_frame_classification.ipynb                # 뉴스 프레임 분류 모델 학습
@@ -135,13 +135,16 @@ project/
  │    ├─ violence_action_region_pattern.ipynb           # 조치 유형/지역별 패턴 분석
  │    ├─ victim_data_supplementary.ipynb                # 피해자 데이터 보조 분석
  │    ├─ KBS_data_preprocessing_visualization.ipynb     # KBS 기사 전처리 및 시각화
+ │    ├─ jtbc_preprocessing_analysis.ipynb              # JTBC 기사 전처리 및 보도 특성 분석
+ │    ├─ yonhap_preprocessing_analysis.ipynb            # 연합뉴스 기사 전처리 및 보도 특성 분석
  │    └─ keyword_wordcloud.ipynb                        # 언론사별 키워드·워드클라우드 생성
  │
  ├─ presentation/                                       # 발표 자료
  │    └─ final_presentation.pptx
  │
  └─ README.md
-```
+'''
+
 
 
 
