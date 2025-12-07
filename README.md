@@ -126,7 +126,10 @@
 
 프로젝트는 다음과 같이 구성되어 있다.
 
-\'\'\'
+프로젝트는 다음과 같이 구성되어 있다.
+
+```
+
 project/
  ├─ analysis/                                           # 모든 분석 관련 코드(ipynb)
  │    ├─ news_frame_classification.ipynb                # 뉴스 프레임 분류 모델 학습
@@ -143,7 +146,9 @@ project/
  │    └─ final_presentation.pptx
  │
  └─ README.md
-\'\'\'
+
+```
+
 
 
 
